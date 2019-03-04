@@ -7,11 +7,11 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Index</title>
     </head>
     <body>
         <?php
-        echo 'Hello World'; //How to print words in PHP
+        echo 'Table of contents'; //How to print words in PHP
         ?>
     </body>
 </html>

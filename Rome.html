@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("colleseum.jpg");
+  background-size: 100%;
+
+      
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+    
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+.para1{
+    background-color: white;
+    width: 1300px;
+    padding: 25px;
+    margin: 50px; 
+    text-align: left; 
+    font-size: 150%;
+    list-style-type: square;
+    border: 15px solid black;
+        }
+        
+        
+    * {
+    box-sizing: border-box;
+            }
+ 
+  .container {
+    position: bottom;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: lightskyblue;
+  width: 75%;
+  padding: 20px;
+  font-size: 25px;
+}
+
+
+</style>
+</head>
+<body>
+    
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://localhost:8000/tiltedpage_scroll_demo.html">Main Menu</a>
+  <a href="http://localhost:8000/Rome.html#">About</a>
+  <a href="http://localhost:8000/PesonalRome.html">Personal Experience</a>
+  <a href="http://localhost:8000/RomeGallery.html">Gallery</a>
+  
+</div>
+
+
+<h2 style="color:lightskyblue"><u>About</u></h2>
+<span style="color:red;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Index</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+<div class="container">
+  <img src="/w3images/notebook.jpg" alt="Notebook" style="width:80%;">
+  <div class="content">
+    <h1>Rome</h1>
+    <p>Rome, the “Eternal City,” brims with ancient history, 
+        from the Colosseum to the port of Ostia Antica to majestic Vatican City and the Sistine Chapel.
+        Because of its history, art, architecture, and beauty – and perhaps its gelato and pasta! –
+        Rome is one of our most popular cities.</p>
+    
+    <p>One of the most famous buildings left by the Ancient Romans is the Colosseum – a huge ampitheatre in the centre of Rome.
+        This is where members of the public would come to watch sporting events and games,
+        including battles between Roman gladiators!
+    </p>
+    
+    
+    
+    
+    <p>
+        The mascot of Rome is a she-wolf that cared for brothers Romulus and Remus, 
+        the mythological founders of Rome.</p>
+  
+    <p>St. Peter's Cathedral is one of the most significant buildings inside the Vatican City of Rome. 
+        <br>Some of the most important works in the basilica are the Pietà - by Michelangelo,
+        the Papal Altar - by Bernini,
+        the Throne of St. Peter - also by Bernini,
+        and the Monument to the Stuarts - by Canova.
+
+    </p>
+  
+  </div>
+  
+</div>
+
+
+   
+</body>
+</html> 

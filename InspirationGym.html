@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("gymBack2.jpg");
+  background-size: 100%;
+
+      
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: gray;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+    
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+.para1{
+    background-color: white;
+    width: 1300px;
+    padding: 25px;
+    margin: 50px; 
+    text-align: left; 
+    font-size: 150%;
+    list-style-type: square;
+    border: 15px solid black;
+        }
+        
+        
+    * {
+    box-sizing: border-box;
+            }
+ 
+  .container {
+    position: bottom;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: lightpink;
+  width: 75%;
+  padding: 20px;
+  font-size: 25px;
+}
+
+
+</style>
+</head>
+<body>
+    
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://localhost:8000/tiltedpage_scroll_demo.html">Main Menu</a>
+  <a href="http://localhost:8000/GymHome.html">Home</a>
+  <a href="http://localhost:8000/workouts.html">Workouts</a>
+  <a href="http://localhost:8000/InspirationGym.html">Inspiration</a>
+  
+</div>
+
+
+<h2 style="color:lightpink"><u>Inspiration</u></h2>
+<span style="color:lightpink;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Index</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+<div class="container">
+  
+  <div class="content">
+    <h1>My Inspirations</h1>
+    
+    <p>When you’re motivated, you feel unstoppable, like you can do anything and make anything happen.<br>
+        There are many elements that influence your motivation and in my view inspiration is vital.<br>
+        You need something to inspire you, whether it be a person or a goal its the building blocks to your success.
+        
+    </p>
+    
+    
+    <p><u>Arnold Schwarzenegger</u>  is possibly one of the most inspirational charachters that has ever graced the earth.<br>
+        The Arnold Sports Festival, considered one of the best professional bodybuilding competitions in recent years, is named after him. 
+        He is widely considered to be one of the greatest bodybuilders of all-time as well as that sport's most charismatic ambassador.</p>
+    
+    <p>
+        Personally, what keeps me motivated is sport.<br>
+        I just try to be the best person that i can be and work against myself.IT WORKS!!!<br>
+        <br>
+        The Senior Hurling team in my club is full of the best players that are in the club and that also inspires me to one day be able to play alongside some of them.
+        <br>
+        <br>
+    </p>
+    
+  </div>
+  
+</div>
+
+
+   
+</body>
+</html> 

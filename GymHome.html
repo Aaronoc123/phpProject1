@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("gymBack2.jpg");
+  background-size: 100%;
+
+      
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: gray;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+    
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+.para1{
+    background-color: white;
+    width: 1300px;
+    padding: 25px;
+    margin: 50px; 
+    text-align: left; 
+    font-size: 150%;
+    list-style-type: square;
+    border: 15px solid black;
+        }
+        
+        
+    * {
+    box-sizing: border-box;
+            }
+ 
+  .container {
+    position: bottom;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: lightpink;
+  width: 75%;
+  padding: 20px;
+  font-size: 25px;
+}
+
+
+</style>
+</head>
+<body>
+    
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://localhost:8000/tiltedpage_scroll_demo.html">Main Menu</a>
+  <a href="http://localhost:8000/GymHome.html">Home</a>
+  <a href="http://localhost:8000/workouts.html">Workouts</a>
+  <a href="http://localhost:8000/InspirationGym.html">Inspiration</a>
+  
+</div>
+
+
+<h2 style="color:lightpink"><u>Home</u></h2>
+<span style="color:lightpink;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Index</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+<div class="container">
+  
+  <div class="content">
+    <h1>Health & Fitness</h1>
+    <p>The gym is a tool used by many people to improve health and fitness.<br>
+        Physical fitness is generally achieved through exercise.
+        Physical fitness is a state of health and well-being and, more specifically, the ability to perform aspects of sports
+        , occupations and daily activities. Physical fitness is generally achieved through proper nutrition, moderate-vigorous physical exercise, and sufficient rest.</p>
+    
+    <p>Some people are intimidated by the sound of going to the gym but you need to make a plan to help get on track.
+       The most important element to health and fitness is NUTRTION.People believe that the key to being in great shape is exercise ,however in fact it is on the basis
+       Exercise-20% Nutrition-80% .Once you master the concept of this you are on your way!!!</p>
+    
+    <p>
+        The gym can be used to help people workout using various machines & Equipment which may not be accessible to them.</p>
+  
+    
+  </div>
+  
+</div>
+
+
+   
+</body>
+</html> 

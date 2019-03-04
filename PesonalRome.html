@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("colleseum.jpg");
+  background-size: 100%;
+
+      
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: red;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+    
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+
+        
+        
+    * {
+    box-sizing: border-box;
+            }
+ 
+  .container {
+    position: bottom;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: lightskyblue;
+  width: 75%;
+  padding: 20px;
+  font-size: 25px;
+}
+
+
+</style>
+</head>
+<body>
+    
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://localhost:8000/tiltedpage_scroll_demo.html">Main Menu</a>
+  <a href="http://localhost:8000/Rome.html#">About</a>
+  <a href="http://localhost:8000/PesonalRome.html">Personal Experience</a>
+  <a href="http://localhost:8000/RomeGallery.html">Gallery</a>
+  
+</div>
+
+
+<h2 style="color:lightskyblue"><u>Personal Experience</u></h2>
+<span style="color:red;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Index</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+<div class="container">
+  <img src="/w3images/notebook.jpg" alt="Notebook" style="width:80%;">
+  <div class="content">
+    <h1>Transition Year</h1>
+    <p>In Transition Year,I visited Rome with my school (Colaiste an Chroi Naofa).
+       We spent 4 days in the ancient city.We chose as a class group to visit here because of its vast historic attractions.
+       In the end it worked out to be an unforgettable experience. </p>
+    
+    <p>During our time we managed to visit:</p>
+    <ul><li> Fontana di Trevi, one of the top Rome's attractions that is never to be missed.</li>
+        <li>The Colosseum-Originally known as the Flavian Amphitheatre</li>
+        <li>The Vatican City-Enclosing St Peter's Basilica and the vatican museums.</li>
+        <li>The Pantheon-Originally dedicated as a temple to "all the gods"</li>
+  </ul>
+    
+    
+    
+    
+    
+  
+    <p>It was a remarkable experience and I would highly recommend visiting the city.
+        <br> I hope to return in the future if the chance arises.
+
+    </p>
+  
+  </div>
+  
+</div>
+
+
+   
+</body>
+</html> 

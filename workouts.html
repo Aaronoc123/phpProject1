@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("gymBack2.jpg");
+  background-size: 100%;
+
+      
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: gray;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+    
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+  .container{
+  position: relative;
+  width: 50%;
+  margin: 10px auto 20px;
+
+}
+
+
+.image {
+  
+  display: block;
+  width: 50%;
+  height: auto;
+ 
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 86%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:gray;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: lightpink;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+    
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://localhost:8000/tiltedpage_scroll_demo.html">Main Menu</a>
+  <a href="http://localhost:8000/GymHome.html">Home</a>
+  <a href="http://localhost:8000/workouts.html">Workouts</a>
+  <a href="http://localhost:8000/InspirationGym.html">Inspiration</a>
+  
+</div>
+
+
+<h2 style="color:lightpink"><u>Workouts</u></h2>
+<span style="color:lightpink;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Index</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+<h2 style="color:lightpink;text-align:center"><u>Various Workouts</u></h2>
+
+<h2 style="color:lightpink;text-align:left"><u>Chest</u></h2>
+<div class="container">
+  <img src="chest.jpg" alt="" style="width:600px;height:600px;"/>
+  <div class="overlay">
+    <div class="text">Chest Workouts</div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<h2 style="color:lightpink;text-align:left"><u>Back</u></h2>
+<div class="container">
+    <img src="back.jpg" alt="" style="width:600px;height:600px;"/>
+  <div class="overlay">
+    <div class="text">Back workouts</div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<h2 style="color:lightpink;text-align:left"><u>Leg</u></h2>
+<div class="container">
+    <img src="legWork.jpg" alt="" style="width:600px;height:600px;"/>
+  <div class="overlay">
+    <div class="text">Leg Workout</div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<h2 style="color:lightpink;text-align:left"><u>UpperBody</u></h2>
+<div class="container">
+    <img src="upperBody.jpg" alt="" style="width:600px;height:600px;"/>
+  <div class="overlay">
+    <div class="text">UpperBody Workout</div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+</body>
+</html> 
