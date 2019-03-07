@@ -10,6 +10,13 @@ and open the template in the editor.
         <title>Index</title>
     </head>
     <body>
+        <style>
+    body{
+        background-image:  url("ebus22.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    </style>
         <?php
         echo 'Table of contents'; //How to print words in PHP
         ?>

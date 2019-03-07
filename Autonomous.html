@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("hitech.jpg");
+  background-size: 100%;
+
+ 
+
+      
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: gray;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+    
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+.para1{
+    color:white;
+    background-color: transparent;
+    padding: 25px;
+    margin: 40px; 
+    text-align: left; 
+    font-size: 140%;
+    
+   
+        }
+        
+        
+div.gallery {
+  margin: 10px;
+  border: 2px solid #ccc;
+  float: left;
+  width: 380px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 20px;
+  text-align: center;
+  color:white;
+  background-color:gray;
+}
+        
+        
+
+
+</style>
+</head>
+<body>
+    
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://localhost:8000/tiltedpage_scroll_demo.html">Main Menu</a>
+  <a href="http://localhost:8000/Business.html">Home</a>
+  <a href="http://localhost:8000/Blockchain.html">Blockchain</a>
+  <a href="http://localhost:8000/Autonomous.html">Autonomous Things (Robots)</a>
+  <a href="http://localhost:8000/ImmersiveExperience.html">Immersive Experience</a> 
+  <a href="http://localhost:8000/eBusiness1.php">Services</a>
+</div>
+
+
+<h2 style="color:lightpink"><u>Consulting Services</u></h2>
+<span style="color:lightpink;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; About Consulting</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+  
+  <div class="para1">
+    <h1 style="color:lightskyblue">Autonomous Things (Robotics)</h1>
+    <p>Autonomous things, abbreviated AuT, or the Internet of autonomous things, abbreviated as IoAT, is an emerging term for the technological developments that are expected to bring computers into the physical environment as autonomous entities without human direction,
+        freely moving and interacting with humans and other objects. <br>
+        Autonomous things, such as robots, drones and autonomous vehicles, 
+        go beyond the automation provided by rigid programming models and exploit AI to deliver advanced behaviours that interact more naturally with their surroundings and with people.
+    </p>   
+    <p></p>
+    
+    <h3 style="color:lightskyblue">21st Century</h3>
+    <p>One of the most popular autonomous things in the world today is the self-driving car.
+        However, lawmakers are struggling to figure out how to prepare for the surge of autonomous vehicles soon coming to a road near you. 
+        As Gartner shares, “By 2021, 10% of new vehicles will have autonomous driving capabilities, compared to less than 1% in 2018.”
+        <br>
+        Cars aside, we must also consider other autonomous things such as drones, robots, and toys.
+        These technologies will change the future of warfare, work, and play. 
+    </p>
+    
+    <p>
+        We’re already using autonomous technology in our lives today, 
+        whether we realize it or not. 
+        These machines are more frequently where we go to check into a hotel, take out money from a bank, and prepare coffee in the morning.
+    </p>
+    
+   
+    <h3 style="color:lightskyblue"><u>Examples of Autonomous Things</u></h3>
+            <p>
+                <div class="gallery">
+         
+                <img src="selfCar.jpg" alt=""/>
+        
+          <div class="desc">This is a self-driving car.</div>
+        </div>
+
+        <div class="gallery">
+        
+            <img src="drone.png" alt=""/>
+    
+        
+          <div class="desc">Autonomous Drone that is used today.</div>
+        </div>
+
+        <div class="gallery">
+         
+            <img src="Robot.jpg" alt="" height="400"/>
+        
+          <div class="desc">Robotics is the way of the future.</div>
+        </div>
+
+        <h3 style="color:lightskyblue"><u>Further Information</u></h3>
+        <p>There is further information available about Autonomous Things
+        <a href="https://www.balena.io/blog/the-internet-of-autonomous-things-strong-devices-weakly-connected/" target="_blank" style="color:fuchsia">here. </a> </p>
+  </div>
+  
+

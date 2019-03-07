@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("hitech.jpg");
+  background-size: 100%;
+
+ 
+
+      
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: gray;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+    
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+.para1{
+    color:white;
+    background-color: transparent;
+    padding: 25px;
+    margin: 40px; 
+    text-align: left; 
+    font-size: 140%;
+    
+   
+        }
+        
+        
+div.gallery {
+  margin: 10px;
+  border: 2px solid #ccc;
+  float: left;
+  width: 380px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 20px;
+  text-align: center;
+  color:white;
+  background-color:gray;
+}
+        
+        
+
+
+</style>
+</head>
+<body>
+    
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://localhost:8000/tiltedpage_scroll_demo.html">Main Menu</a>
+  <a href="http://localhost:8000/Business.html">Home</a>
+  <a href="http://localhost:8000/Blockchain.html">Blockchain</a>
+  <a href="http://localhost:8000/Autonomous.html">Autonomous Things (Robots)</a>
+  <a href="http://localhost:8000/ImmersiveExperience.html">Immersive Experience</a> 
+  <a href="http://localhost:8000/eBusiness1.php">Services</a>
+</div>
+
+
+<h2 style="color:lightpink"><u>Consulting Services</u></h2>
+<span style="color:lightpink;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; About Consulting</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+  
+  <div class="para1">
+    <h1 style="color:lightskyblue">Blockchain</h1>
+    <p>A blockchain is, in the simplest of terms, a time-stamped series of immutable record of data that is managed by cluster of computers not owned by any single entity. 
+       Each of these blocks of data (i.e. block) are secured and bound to each other using cryptographic principles (i.e. chain).
+    </p>   
+    <p>The blockchain network has no central authority — it is the very definition of a democratized system.
+        Since it is a shared and immutable ledger, the information in it is open for anyone and everyone to see.
+        Hence, anything that is built on the blockchain is by its very nature transparent and everyone involved is accountable for their actions.</p>
+    
+    <h3 style="color:lightskyblue">Blockchain Explained</h3>
+    <p>A blockchain carries no transaction cost.
+        (An infrastructure cost yes, but no transaction cost.)
+        The blockchain is a simple yet ingenious way of passing information from A to B in a fully automated and safe manner. 
+        One party to a transaction initiates the process by creating a block. 
+        This block is verified by thousands, perhaps millions of computers distributed around the net.
+        The verified block is added to a chain, which is stored across the net,
+        creating not just a unique record, but a unique record with a unique history.
+        Falsifying a single record would mean falsifying the entire chain in millions of instances.
+        That is virtually impossible. 
+        Bitcoin uses this model for monetary transactions, but it can be deployed in many others ways.</p>
+    
+   
+    <h3 style="color:lightskyblue"><u>Diagrams</u></h3>
+            <p>
+                <div class="gallery">
+         
+            <img src="diagramBlockc.jpg" alt=""/>
+        
+          <div class="desc">This is an image of the process.</div>
+        </div>
+
+        <div class="gallery">
+        
+            <img src="BlockchainDiagram.jpg" alt="" >
+    
+        
+          <div class="desc">This image shows some of the various elements involved.</div>
+        </div>
+
+        <div class="gallery">
+         
+            <img src="BlockchainDiagram2.jpg" alt="" />
+        
+          <div class="desc">This shows everyday use of Blockchain.</div>
+        </div>
+            <br>
+            <br>
+      
+  </div>
+<div class="para1"  ><h3 style="color:lightskyblue"><u>Further Information</u></h3>
+        <p>There is further information available about Blockchain 
+        <a href="https://blockgeeks.com/guides/what-is-blockchain-technology/" target="_blank" style="color:fuchsia">here. </a> </p>
+</div>
+
+
+
+   
+</body>
+</html> 

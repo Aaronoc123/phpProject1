@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("hitech.jpg");
+  background-size: 100%;
+
+ 
+
+      
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: gray;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+
+    
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+.para1{
+    color:white;
+    background-color: transparent;
+    padding: 25px;
+    margin: 40px; 
+    text-align: left; 
+    font-size: 140%;
+    
+   
+        }
+        
+        
+div.gallery {
+  margin: 10px;
+  border: 2px solid #ccc;
+  float: left;
+  width: 380px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 20px;
+  text-align: center;
+  color:white;
+  background-color:gray;
+}
+        
+        
+
+
+</style>
+</head>
+<body>
+    
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://localhost:8000/tiltedpage_scroll_demo.html">Main Menu</a>
+  <a href="http://localhost:8000/Business.html">Home</a>
+  <a href="http://localhost:8000/Blockchain.html">Blockchain</a>
+  <a href="http://localhost:8000/Autonomous.html">Autonomous Things (Robots)</a>
+  <a href="http://localhost:8000/ImmersiveExperience.html">Immersive Experience</a> 
+  <a href="http://localhost:8000/eBusiness1.php">Services</a>
+</div>
+
+
+<h2 style="color:lightpink"><u>Consulting Services</u></h2>
+<span style="color:lightpink;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; About Consulting</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+  
+  <div class="para1">
+    <h1 style="color:lightskyblue">Immersive Experience</h1>
+    <p>
+        The concept of the "immersive user experience" describes what happens when human capabilities mix with augmented and virtual realities to change how people perceive the digital world.
+        The ubiquitous use of Amazon Alexa in American homes to turn on music, turn off a light or tell a joke is one simple case; vocal interaction changes the processes for those activities.
+        But the impact reaches even further in work. Companies are using remote assistance through digital channels, for example, to enable "an expert engineer to work with somebody in a remote factory to get a piece of equipment back online, 
+        saving millions of dollars so the production line is not down," explained Gartner Vice President David Cearley
+    </p>
+    
+    
+    <p>There are two types of immersive experiences, one being when you are actually in a physical environment and the other where you are shown around a real or imagined environment via desktop,
+        tablet, mobile or via VR ( Virtual Reality) headset. 
+        </p>
+        
+        
+        <p>With immersion come several other terms that merit explanation. 
+            The media likes to talk about (and use – often incompetently) Virtual Reality (VR), Augmented Reality (AR) and Mixed Reality (MR), among other terms.
+            Though they sometimes use these interchangeably, there are differences between all of these terms.
+               
+        </p>
+    
+    
+    <h3 style="color:lightpink">Virtual Reality</h3>
+    <p>When we talk about Virtual Reality, we are describing a fully constructed CGI digital world into which you place the user and which they can interact with.
+        All of the contents of the world are man-made and rendered as needed.</p>
+    
+    <p>Immersion into virtual reality is a perception of being physically present in a non-physical world.
+        The perception is created by surrounding the user of the VR system in images, sound or other stimuli that provide an engrossing total environment. 
+    </p>   
+    
+     <h3 style="color:lightpink">Augmented Reality</h3>
+    <p>Augmented Reality, on the other hand, is a combination of the real world and certain digital elements.
+        The most well-known example of AR is certainly the mobile game Pokemon Go.
+        This is where objects are placed according to GPS or geolocated co-ordinates. 
+        However increasingly we are seeing AR been used to overlay additional moving content to static flat content.</p>
+    
+     <h3 style="color:lightpink">Mixed Reality</h3>
+    <p>Mixed Reality is perhaps the most exciting of the three. 
+        It’s basically a mix of holographic and virtual images, and the user wears special glasses to see it.
+        Many consider this to be the future of gaming.</p>
+    
+   
+   
+    <h3 style="color:lightskyblue"><u>Examples</u></h3>
+            <p>
+                <div class="gallery">
+         
+            <img src="VR.jpg" alt=""/>
+        
+          <div class="desc">Virtual Reality(VR)</div>
+        </div>
+
+        <div class="gallery">
+        
+            <img src="AR.jpg" alt="" >
+    
+        
+          <div class="desc">Augmented Reality(AR)</div>
+        </div>
+
+        <div class="gallery">
+         
+            <img src="MR.jpg" alt="" />
+        
+          <div class="desc">Mixed Reality(MR)</div>
+        </div>
+
+        <h3 style="color:lightskyblue"><u>Further Information</u></h3>
+        <p>There is further information available about Immersive Experiences
+            <a href="https://vismedia.agency/what-is-an-immersive-experience/" target="_blank" style="color:fuchsia">here.</a></p>
+  
+  
+

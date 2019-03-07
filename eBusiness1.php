@@ -17,32 +17,38 @@ $_SESSION['txtTotal'] = $totalValue;
 </head>
 <body>
 <style>
-body {
-background-image: url("http://629photography.com/Orange-background.png");
-background-repeat: no-repeat;
-background-size: 2000px 1000px
+    header{
+        background-image:url("company.jpg")
+    }
+    body {
+    background-image: url("consult.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
     </style>
-    <div class="form">
-            <form name="intCalc" method="post" action="eBus2.php">
-        <h1><u>Shop Calculator</u></h1>
+    <div class="header">
+            
+        <h1><u><center>Prestigious Co.</center></u></h1>
         <hr />
-        <center>
+    </div>
+        <div class="form">
+            <form name="intCalc" method="post" action="eBus2.php">
+                <center>
                     <table cellspacing="10">
             <tr>
-                            <td><b>Beverage</b></td>
+                <td><h3><b>Select a Consulting Service</b></h3></td>
             </tr>
             <tr>
-                            <td>CocaCola</td>
-                            <td><input type="radio" id="CocaCola" name="rdoGroup" value="1" /></td>
+                            <td>Blockchain @ £1500</td>
+                            <td><input type="radio" id="Blockchain" name="rdoGroup" value="1500" /></td>
                         </tr>                
             <tr>
-                            <td>Sprite</td>
-                            <td><input type="radio" id="Sprite" name="rdoGroup" value="5" /></td>
+                            <td>Autonomous Things @ £2000</td>
+                            <td><input type="radio" id="AutonomousThings" name="rdoGroup" value="2000" /></td>
                         </tr>                
             <tr>
-                            <td>Fanta</td>
-                            <td><input type="radio" id="Fanta" name="rdoGroup" value="30" /></td>
+                            <td>Immersive Experience @ £2750</td>
+                            <td><input type="radio" id="ImmersiveExperience" name="rdoGroup" value="2750" /></td>
                         </tr>    
                     </table>
                 </center>
@@ -52,7 +58,7 @@ background-size: 2000px 1000px
             <table cellspacing="10">
         <tr>
                     <td><b></b></td>
-                    <td><b>Amount</b></td>
+                    <td><h3><b>Amount</b></h3></td>
         </tr>
         <tr>
                     <td>Sub Total</td>
@@ -63,7 +69,7 @@ background-size: 2000px 1000px
                     <td><input type="text" id="txtDisc" name="txtDisc" readonly /></td>
         </tr>
                 <tr>
-                    <td>+VAT @40%</td>
+                    <td>+VAT @20%</td>
                     <td><input type="text" id="txtVat" name="txtVat" readonly /></td>
         </tr>
                 <tr>
@@ -77,7 +83,8 @@ background-size: 2000px 1000px
         <center>
                     <input type="button" name="btnCalc" id="btnCalc" onclick="calcSub()" value="Calculate Amount"/>
                     <input type="button" name="btnClear" id="btnClear" onclick="AmountClear()" value="Clear"/>
-                    <input type="submit" name="btnProceed" id="btnProceed" onclick="" value="Proceed"/>
+                    <input type="submit" name="btnProceed" id="btnProceed" onclick="" value="Checkout"/>
+                   <input  type="button" value="Previous" onclick="history.back(-1)" />
         </center>
     </form>
 </div>
@@ -86,26 +93,26 @@ background-size: 2000px 1000px
         function calcSub() {
             //Assigning variables to the values
             var subAmount = parseFloat(document.getElementById('txtSubTot').value);
-            var CocaCola = parseFloat(document.getElementById('CocaCola').value);
-            var Sprite = parseFloat(document.getElementById('Sprite').value);
-            var Fanta = parseFloat(document.getElementById('Fanta').value);
+            var Blockchain = parseFloat(document.getElementById('Blockchain').value);
+            var AutonomousThings = parseFloat(document.getElementById('AutonomousThings').value);
+            var ImmersiveExperience = parseFloat(document.getElementById('ImmersiveExperience').value);
             
 //            If radio buttons are clicked, values are assigned
-            if (document.getElementById('CocaCola').checked) {
-                document.intCalc.txtSubTot.value = CocaCola;
-                subAmount = CocaCola;
+            if (document.getElementById('Blockchain').checked) {
+                document.intCalc.txtSubTot.value = Blockchain;
+                subAmount = Blockchain;
                 calculation(subAmount);
                 
             } 
-        else if (document.getElementById('Sprite').checked) {
-                document.intCalc.txtSubTot.value = Sprite;
-                subAmount = Sprite;
+        else if (document.getElementById('AutonomousThings').checked) {
+                document.intCalc.txtSubTot.value = AutonomousThings;
+                subAmount = AutonomousThings;
                  calculation(subAmount);
                
             } 
-        else if (document.getElementById('Fanta').checked) {
-                document.intCalc.txtSubTot.value = Fanta;
-                subAmount = Fanta;
+        else if (document.getElementById('ImmersiveExperience').checked) {
+                document.intCalc.txtSubTot.value = ImmersiveExperience;
+                subAmount = ImmersiveExperience;
                  calculation(subAmount);
             } 
         }    
@@ -114,7 +121,7 @@ background-size: 2000px 1000px
         function calculation(parmSTotal){
            var subTotal = parseFloat(parmSTotal);
            var discCalc = parseFloat(subTotal * .30);
-           var vatCalc = parseFloat(subTotal * .40);
+           var vatCalc = parseFloat(subTotal * .20);
            var total = parseFloat(subTotal - discCalc + vatCalc);
            
            //Inserting them into the correct fields
