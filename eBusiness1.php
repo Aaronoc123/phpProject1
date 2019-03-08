@@ -39,15 +39,15 @@ $_SESSION['txtTotal'] = $totalValue;
                 <td><h3><b>Select a Consulting Service</b></h3></td>
             </tr>
             <tr>
-                            <td>Blockchain @ £1500</td>
+                            <td>Blockchain @ €1500</td>
                             <td><input type="radio" id="Blockchain" name="rdoGroup" value="1500" /></td>
                         </tr>                
             <tr>
-                            <td>Autonomous Things @ £2000</td>
+                            <td>Autonomous Things @ €2000</td>
                             <td><input type="radio" id="AutonomousThings" name="rdoGroup" value="2000" /></td>
                         </tr>                
             <tr>
-                            <td>Immersive Experience @ £2750</td>
+                            <td>Immersive Experience @ €2750</td>
                             <td><input type="radio" id="ImmersiveExperience" name="rdoGroup" value="2750" /></td>
                         </tr>    
                     </table>

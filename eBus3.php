@@ -55,7 +55,7 @@ $phoneNumber = $_POST['txtphoneNumber'];
     echo "<br></br>";
     echo "Phone Number: ".$phoneNumber.".";
     echo "<br></br>";
-    echo "The total amount is : £".$totalValue2.".";
+    echo "The total amount is : €".$totalValue2.".";
     ?></center></div>
 
 </body>
