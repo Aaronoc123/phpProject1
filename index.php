@@ -34,7 +34,7 @@ and open the template in the editor.
         </ol>
         <center>AOC-118454172</center>
         <center><a href="https://github.com/Aaronoc123/phpProject1" style="color:blueviolet">Github</center>
-            <center><a href="https://dashboard.heroku.com/pipelines/f2fd35d0-292f-4b7f-8f65-cc83800254a3" style="color:blueviolet">Heroku</center>
+            <center><a href="https://ivansproject-118454172.herokuapp.com/" style="color:blueviolet">Heroku</center>
     </div>
     </body>
 </html>
