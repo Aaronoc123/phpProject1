@@ -32,8 +32,9 @@ and open the template in the editor.
             <li><a href="http://localhost:8000/tiltedpage_scroll_demo.html" target="_blank" style="color:blue">Interests</a></li>
             <li><a href="http://localhost:8000/Business.html" target="_blank" style="color:blue">Business-Prestigious Co.</a></li>
         </ol>
-        
-     
+        <center>AOC-118454172</center>
+        <center><a href="https://github.com/Aaronoc123/phpProject1" style="color:blueviolet">Github</center>
+            <center><a href="https://github.com/Aaronoc123/phpProject1" style="color:blueviolet">Heroku</center>
     </div>
     </body>
 </html>
